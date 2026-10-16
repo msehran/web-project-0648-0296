@@ -1,0 +1,13 @@
+/* hero section  */
+.hero {
+  width: 100%;
+  height: 450px;
+  background: url("./../assets/images/hero-section/bg.png") center / cover
+    no-repeat;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 160px;
+  }
+}

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Background colors */
+  --bg-header: #f7f6f2;
+  --bg-body: #f7f6f2;
+  --bg-btn: #202020;
+  --bg-white: #ffffff;
+  --bg-hero: #d6cbbe;
+
+  /* Text colors */
+  --text-heading: #222222;
+  --text-body: #4a4946;
+  --text-white: #ffffff;
+  --text-muted: #77736d;
+  --text-nav: #333333;
+
+  /* Border colors */
+  --border-color: #e5e1da;
+  --border-dark: #202020;
+
+  /* Button colors */
+  --btn-bg: #202020;
+  --btn-text: #ffffff;
+  --btn-hover: #3a3a3a;
+
+  /* Typography */
+  --font-heading: "Cormorant Garamond", serif;
+  --font-body: "Inter", sans-serif;
+  --font-logo: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  color: var(--text-body);
+  background-color: var(--bg-body);
+}
+
+.logo {
+  font-family: var(--font-logo);
+}
+
+.heading {
+  font-family: var(--font-heading);
+}
+
+.text {
+  font-family: var(--font-body);
+}
+
+a {
+  color: var(--text-nav);
+  text-decoration: none;
+}
+
+i {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  i {
+    font-size: 16px;
+  }
+}
