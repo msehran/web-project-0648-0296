@@ -2,7 +2,7 @@
 
 :root {
   /* Background colors */
-  --bg-header: #f7f6f2;
+  --bg-header: #f8f6f4;
   --bg-body: #f7f6f2;
   --bg-btn: #202020;
   --bg-white: #ffffff;
@@ -41,10 +41,31 @@ body {
   width: 100vw;
   overflow-x: hidden;
   color: var(--text-body);
+  scroll-behavior: smooth;
+  scrollbar-width: 5px;
   background-color: var(--bg-body);
 }
 
+/* scroll bar design  */
+body::-webkit-scrollbar-track {
+  background: #f7f6f2;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #c8bdaa;
+  border-radius: 10px;
+}
+
 .logo {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-heading);
   font-family: var(--font-logo);
 }
 
@@ -65,8 +86,45 @@ i {
   font-size: 18px;
 }
 
+/* hero section  */
+.hero {
+  width: 100%;
+  height: 450px;
+  background: url("./../assets/images/hero-section/bg.png") center / cover
+    no-repeat;
+}
+
 @media (max-width: 768px) {
+  html,
+  body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
   i {
     font-size: 16px;
+  }
+
+  /* hero section  */
+  .hero {
+    height: 200px;
+  }
+}
+
+@media (max-width: 374px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  /* hear section  */
+  .hero {
+    height: 170px;
   }
 }
