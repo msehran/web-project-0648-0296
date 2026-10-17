@@ -94,6 +94,20 @@ i {
     no-repeat;
 }
 
+@media (max-width: 1280px) {
+  /* hero section  */
+  .hero {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* hero section  */
+  .hero {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -114,7 +128,7 @@ i {
 
   /* hero section  */
   .hero {
-    height: 200px;
+    height: 180px;
   }
 }
 
@@ -125,6 +139,6 @@ i {
 
   /* hear section  */
   .hero {
-    height: 170px;
+    height: 130px;
   }
 }

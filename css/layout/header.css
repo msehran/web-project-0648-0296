@@ -96,7 +96,8 @@
     height: 60px;
   }
 
-  .userIcon {
+  .userIcon,
+  .heart-btn {
     display: none;
   }
 

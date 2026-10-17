@@ -13,7 +13,7 @@ export function HeaderHtml() {
     <div class="icon-container">
       <button class="icon"><i class="bi bi-search"></i></button>
       <a class="userIcon" class="icon" href="/register.html"><i class="fa-solid fa-user"></i></a>
-      <a class="icon cart-btn"> <i class="bi bi-heart"></i>
+      <a class="icon cart-btn heart-btn"> <i class="bi bi-heart"></i>
         <p class="item-counter">0</p>
       </a>
       <button class="icon cart-btn"> <i class="bi bi-bag"></i>
