@@ -1,0 +1,42 @@
+[
+  {
+    "id": "men-1",
+    "gender": "men",
+    "category": "unisex",
+    "name": "Essential Hoodie",
+    "price": 89.0,
+    "image": "image1.png"
+  },
+  {
+    "id": "women-1",
+    "gender": "women",
+    "category": "unisex",
+    "name": "Urban Overshirt",
+    "price": 79.0,
+    "image": "image2.png"
+  },
+  {
+    "id": "men-2",
+    "gender": "men",
+    "category": "unisex",
+    "name": "Knit Sweater",
+    "price": 95.0,
+    "image": "image3.png"
+  },
+  {
+    "id": "women-2",
+    "gender": "women",
+    "category": "unisex",
+    "name": "Relaxed Shirt",
+    "price": 69.0,
+    "image": "image4.png"
+  },
+  {
+    "id": "men-3",
+    "gender": "men",
+    "category": "unisex",
+    "name": "Cargo Pants",
+    "price": 85.0,
+    "image": "image5.png"
+  }
+]

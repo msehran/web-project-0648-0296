@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "category": "Classics",
+    "title": "Timeless Classics",
+    "image": "pic 1.png",
+    "description": "Timeless styles for every season."
+  },
+  {
+    "id": 2,
+    "category": "Essentials",
+    "title": "Everyday Essentials",
+    "image": "pic 2.png",
+    "description": "Everyday comfort with a touch of elegance."
+  },
+  {
+    "id": 3,
+    "category": "New Season",
+    "title": "SS'25 Collection",
+    "image": "pic 3.png",
+    "description": "Discover fresh styles for the new season."
+  },
+  {
+    "id": 4,
+    "category": "Active",
+    "title": "Active Collection",
+    "image": "pic 4.png",
+    "description": "Comfortable styles made for everyday movement."
+  }
+]

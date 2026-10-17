@@ -8,6 +8,6 @@ hero.innerHTML = heroSection(
   "Explore out exclusive collections, designed for modern living, timeless style and effortless sophistication.",
   false,
   "",
-  "mw.png",
+  "mv-image.png",
   "",
 );

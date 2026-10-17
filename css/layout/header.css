@@ -7,6 +7,7 @@
   padding-inline: 50px;
   padding-block: 10px;
   align-items: center;
+  z-index: 10;
   justify-content: space-between;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   background-color: var(--bg-header);
