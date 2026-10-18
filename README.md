@@ -1,61 +1,80 @@
 # VÉLORA — Unisex Fashion Store
 
-A modern, responsive storefront website for a unisex fashion brand. This project is built as a static front-end e-commerce landing experience using HTML, CSS, and JavaScript, with reusable UI components for navigation, footer, and mobile menu sections.
+VÉLORA is a modern, responsive storefront for a unisex fashion brand. The site is built as a static front-end e-commerce experience using HTML, CSS, JavaScript, and local JSON data files.
 
-## Project Overview
+## Overview
 
-VÉLORA is designed to showcase lifestyle and fashion products through a clean storefront experience. The website includes a homepage, shopping page, collections, product details, contact section, and registration page, giving users a complete browsing flow for an online fashion brand.
+This project presents a complete online shopping experience with a landing page, products, collections, contact form, and registration flow. The design focuses on a clean luxury aesthetic and mobile-friendly browsing.
 
 ## Features
 
 - Responsive storefront layout for desktop and mobile devices
-- Reusable header and footer components
-- Mobile bottom navigation menu
-- Multiple storefront pages for shopping and browsing
-- Product-focused landing page design
-- Clean, modern fashion branding with icon-based UI
-- Static front-end setup with no backend required
+- Reusable header, footer, and navigation components
+- Mobile-friendly bottom navigation menu
+- Multiple storefront pages for browsing and shopping
+- Product and collection sections powered by JSON data
+- Clean fashion-brand styling with modern typography and icons
+- Static front-end implementation with no backend dependency
 
 ## Pages
 
 - Home: `index.html`
 - Shop: `shop.html`
 - Collections: `collections.html`
-- Product Details: `product.html`
+- Product Detail: `product.html`
 - Contact: `contact.html`
-- Register / Account: `register.html`
+- Register: `register.html`
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
+- ES Modules
 - Bootstrap Icons
 - Font Awesome
+- JSON data files for product content
 
 ## Project Structure
 
 ```text
 Web Project/
-├── assets/                 # Images, icons, and visual assets
-├── components/             # Reusable JS component templates
+├── assets/
+│   ├── icon/
+│   └── images/
+│       ├── arrival-product/
+│       ├── collections/
+│       ├── hero-section/
+│       └── products/
+├── components/
 │   ├── footer.js
 │   ├── header.js
-│   └── navigation-menu.js
-├── css/                    # Global and page-specific stylesheets
+│   ├── hero-section.js
+│   ├── home-comp.js
+│   ├── navigation-menu.js
+│   └── product-cart.js
+├── css/
+│   ├── collections.css
+│   ├── contact.css
 │   ├── globals.css
 │   ├── home.css
-│   ├── shop.css
 │   ├── product.css
 │   ├── register.css
-│   ├── contact.css
-│   ├── collections.css
+│   ├── shop.css
 │   └── layout/
-│       ├── header.css
-│       └── footer.css
+│       ├── footer.css
+│       └── header.css
 ├── js/
-│   ├── main.js             # Component loader for shared UI
-│   └── home.js
+│   ├── collections.js
+│   ├── contact.js
+│   ├── home.js
+│   ├── main.js
+│   ├── register.js
+│   └── shop.js
+├── Json/
+│   ├── arrival-products.json
+│   ├── collections.json
+│   └── products.json
 ├── collections.html
 ├── contact.html
 ├── index.html
@@ -63,18 +82,16 @@ Web Project/
 ├── README.md
 ├── register.html
 ├── shop.html
-└── Json/                  # Project data folder
+└── .git/
 ```
 
-## How to Run
-
-Since this is a static website, you can run it in any of the following ways:
+## Getting Started
 
 ### Option 1: Open directly in the browser
 
-- Open `index.html` in a browser
+Open `index.html` in a browser.
 
-### Option 2: Use a local development server
+### Option 2: Run a local web server
 
 From the project folder, run:
 
@@ -82,24 +99,31 @@ From the project folder, run:
 python -m http.server 8000
 ```
 
-Then visit:
+Then open:
 
 ```text
 http://localhost:8000
 ```
 
-### Option 3: VS Code Live Server
+### Option 3: Use VS Code Live Server
 
 - Open the project in VS Code
 - Right-click `index.html`
-- Select "Open with Live Server"
+- Choose "Open with Live Server"
+
+## Customization
+
+- Update product and collection content in the `Json/` folder
+- Replace visual assets in `assets/images/`
+- Adjust page styling in the CSS files under `css/`
+- Modify reusable sections in the JavaScript files inside `components/`
 
 ## Notes
 
-- This project is a front-end storefront prototype and does not currently include a database or backend API.
-- Product content and branding can be customized in the HTML, CSS, and JavaScript files.
-- Shared website sections like the header and footer are dynamically injected from the `components` directory.
+- This is a front-end storefront demo and does not include a backend, database, or authentication system.
+- The layout is designed for a fashion brand showcase and can be expanded into a full e-commerce app later.
+- Shared site sections such as the header and footer are injected dynamically from the `components/` folder.
 
 ## License
 
-This project is for educational and portfolio/demo purposes.
+This project is intended for educational, portfolio, and demo use.
