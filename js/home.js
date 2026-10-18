@@ -13,6 +13,7 @@ hero.innerHTML = heroSection(
   "Shop New Arrivals",
   "home-hero-mw.png",
   "/ Modern living",
+  "shop.html",
 );
 
 // Arival Products Section

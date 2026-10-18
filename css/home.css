@@ -164,6 +164,72 @@
   font-weight: 500;
 }
 
+/* philosophy section  */
+.philosophy-section {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: grid;
+  height: 350px;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bg-hero);
+}
+
+.philosophy-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.philosophy-image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.philosophy-copy {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 18px;
+  padding: 20px 30px;
+}
+
+.philosophy-copy div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.philosophy-label {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.philosophy-title {
+  font-size: 36px;
+  font-family: var(--font-heading);
+  line-height: 1em;
+}
+
+.philosophy-text {
+  line-height: 1.3em;
+  max-width: 345px;
+}
+
+.learn-more-link {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+/* section empty-space */
+.empty-space {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .new-arrivals {
     padding-inline: 30px;
@@ -212,6 +278,17 @@
 
   .collection-title {
     font-size: 14px;
+  }
+
+  /* philosophy-section */
+  .philosophy-section {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .philosophy-copy {
+    row-gap: 10px;
+    padding: 20px 30px;
   }
 }
 
@@ -314,6 +391,49 @@
   .collection-title {
     font-size: 14px;
   }
+
+  /* philosophy section  */
+  .philosophy-section {
+    margin-top: 30px;
+    height: 180px;
+    grid-template-columns: 1fr 1.35fr;
+    background-color: var(--bg-hero);
+  }
+
+  .philosophy-copy {
+    justify-content: start;
+    padding: 10px 8px;
+  }
+
+  .philosophy-copy div {
+    row-gap: 8px;
+  }
+
+  .philosophy-label {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+
+  .philosophy-title {
+    font-size: 18px;
+    line-height: 1em;
+  }
+
+  .philosophy-text {
+    line-height: 1.3em;
+    font-size: 10px;
+    max-width: 190px;
+  }
+
+  .learn-more-link {
+    font-size: 12px;
+  }
+
+  /* section empty-space */
+  .empty-space {
+    display: block;
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -364,8 +484,5 @@
   /* collection section  */
   .collection-image {
     height: 130px;
-  }
-  .collection-title {
-    font-size: 12px;
   }
 }

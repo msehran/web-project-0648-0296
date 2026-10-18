@@ -23,7 +23,7 @@
   font-family: var(--font-logo);
 }
 
-.hero-text button {
+.hero-text a {
   padding: 12px 20px;
   max-width: 230px;
   border: none;
@@ -88,7 +88,7 @@
     letter-spacing: 0.15em;
   }
 
-  .hero-text button {
+  .hero-text a {
     padding: 10px 15px;
     max-width: 200px;
     font-size: 14px;
@@ -122,7 +122,7 @@
     display: none;
   }
 
-  .hero-text button {
+  .hero-text a {
     padding: 5px 5px;
     max-width: 120px;
     font-size: 8px;
@@ -156,7 +156,7 @@
     letter-spacing: 0.05em;
   }
 
-  .hero-text button {
+  .hero-text a {
     padding: 2px 0px;
     max-width: 110px;
     font-size: 8px;

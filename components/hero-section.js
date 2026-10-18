@@ -6,6 +6,7 @@ export function heroSection(
   btnText,
   imageSrc,
   tagline1 = "",
+  link = "",
 ) {
   return ` <div class="hero-content">
       <div class="hero-text">
@@ -18,9 +19,9 @@ export function heroSection(
         </p>
         ${
           btn
-            ? `<button class="btn">
+            ? `<a href="/${link}" class="btn">
          ${btnText} <i class="bi bi-arrow-right"></i>
-        </button>`
+        </a>`
             : ``
         }
       </div>
