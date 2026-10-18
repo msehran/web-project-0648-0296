@@ -19,6 +19,75 @@
 
     <main class="main">
         <section class="hero"></section>
+        <section class="products">
+            <aside class="products-filter">
+                <div class="filter-heading">
+                    <h4 class="filter-heading-h4">Categories</h4>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="filter-options"></div>
+                <div class="filter-group">
+                    <h4 class="filter-heading-h4">Product Type</h4>
+                    <div class="type-options"></div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-heading-h4">Size</h4>
+                    <div class="size-options">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h4 class="filter-heading-h4">Color</h4>
+                    <div class="color-options">
+                    </div>
+                </div>
+                <div class="filter-group price-filter">
+                    <h4 class="filter-heading-h4">Price Range</h4>
+                    <div class="price-slider">
+                        <input type="range" min="0" max="200" value="200">
+                    </div>
+                    <div class="price-labels">
+                        <span>$0</span>
+                        <span>$200</span>
+                    </div>
+                </div>
+                <button class="clear-filters" type="reset"
+                    onclick="document.querySelector('.products-filter').querySelectorAll('input').forEach(input => { if(input.type === 'checkbox') input.checked = false; if(input.type === 'radio' && input.value === 'all') input.checked = true; });">
+                    Clear Filters
+                </button>
+            </aside>
+            <div class="products-container">
+                <div class="products-toolbar">
+                    <button class="filter-toggle">
+                        <span>
+                            <i class="bi bi-sliders"></i>
+                            Filter
+                        </span>
+                        <i class="bi bi-chevron-down filter-arrow"></i>
+                    </button>
+                    <p class="">Showing <strong>1-12</strong> of <strong>48</strong> products</p>
+                    <div class="toolbar-actions">
+                        <label for="sort-products">Sort by:</label>
+                        <select id="sort-products">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest</option>
+                            <option value="low">Price: Low to High</option>
+                            <option value="high">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="products-grid"></div>
+                <div class="pagination">
+                    <button disabled aria-label="Previous page">←</button>
+                    <button class="current-page">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <span>...</span>
+                    <button>4</button>
+                    <button aria-label="Next page">→</button>
+                </div>
+            </div>
+        </section>
+        <section class="empty-space"></section>
     </main>
 
     <footer id="footer"></footer>
