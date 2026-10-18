@@ -1,0 +1,785 @@
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Main Register Section ---------- */
+
+.register-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  margin-block: 50px;
+  gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-inline: 50px;
+  background: var(--bg-body);
+}
+
+/* =========================================
+   LEFT BANNER
+========================================= */
+
+.register-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-width: 0;
+  min-height: 760px;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 60px 48px;
+  color: var(--text-white);
+
+  /* Update this path to your image location */
+  background-color: var(--bg-hero);
+  background-image: url("../assets/images/Sunlit\ Minimalist\ Boutique\ with\ Olive\ Tree.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.18) 35%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+}
+
+.banner-content {
+  width: 100%;
+  max-width: 540px;
+  margin-inline: auto;
+}
+
+.banner-intro {
+  margin-bottom: 44px;
+}
+
+.banner-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  line-height: 1.6;
+  color: var(--text-white);
+}
+
+.eyebrow-line {
+  display: inline-block;
+  width: 42px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+.banner-title {
+  margin-bottom: 20px;
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 4.2vw, 68px);
+  font-weight: 400;
+  line-height: 1.03;
+  letter-spacing: -1px;
+  color: var(--text-white);
+}
+
+.banner-description {
+  max-width: 370px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: var(--bg-gray);
+}
+
+.banner-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border-color);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+}
+
+.benefit-icon {
+  flex: 0 0 22px;
+  margin-top: 3px;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--text-white);
+}
+
+.benefit-text {
+  min-width: 0;
+}
+
+.benefit-text h3 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-white);
+}
+
+.benefit-text p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-gray);
+}
+
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 560px;
+  min-width: 0;
+  margin-inline: auto;
+  padding: 55px 55px;
+}
+
+.register-header {
+  margin-bottom: 30px;
+}
+
+.register-title {
+  margin-bottom: 9px;
+  font-family: var(--font-heading);
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--text-heading);
+}
+
+.register-subtitle {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.signin-link {
+  margin-left: 4px;
+  font-weight: 600;
+  color: var(--text-heading);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.signin-link:hover {
+  color: var(--text-muted);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 51px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-white);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-field:focus-within {
+  border-color: var(--border-dark);
+  box-shadow: 0 0 0 2px rgba(32, 32, 32, 0.04);
+}
+
+.field-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 49px;
+  padding: 0 43px 0 45px;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-heading);
+  font-size: 12px;
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.optional-field {
+  min-width: 0;
+  padding: 0;
+  border: none;
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 11px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-heading);
+}
+
+.field-label span {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.date-select-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.date-select {
+  width: 100%;
+  min-width: 0;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  outline: none;
+  background-color: var(--bg-white);
+  color: var(--text-body);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.date-select:focus {
+  border-color: var(--border-dark);
+}
+
+.gender-field {
+  margin-top: 1px;
+}
+
+.gender-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+}
+
+.gender-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-body);
+  cursor: pointer;
+}
+
+.gender-option input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: var(--bg-btn);
+  cursor: pointer;
+}
+
+.terms-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.terms-checkbox {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  accent-color: var(--bg-btn);
+  cursor: pointer;
+}
+
+.terms-label {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.terms-label a {
+  color: var(--text-heading);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.terms-label span {
+  color: #b63b32;
+}
+
+.register-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 51px;
+  margin-top: 3px;
+  padding: 14px 20px;
+  border: 1px solid var(--btn-bg);
+  border-radius: 0;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.register-submit-btn:hover {
+  background: var(--btn-hover);
+  border-color: var(--btn-hover);
+}
+
+.form-divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin: 3px 0;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+.form-divider p {
+  font-size: 11px;
+  line-height: 1;
+  color: var(--text-muted);
+}
+
+.social-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  background: var(--bg-white);
+  color: var(--text-heading);
+  font-size: 12px;
+  font-weight: 500;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.social-login-btn:hover {
+  border-color: var(--border-dark);
+  background: #faf9f7;
+}
+
+.google-icon,
+.apple-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.register-footer {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+/* SERVICE BENEFITS */
+
+.service-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  width: 100%;
+  padding: 30px 50px;
+  background: var(--bg-hero);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  min-width: 0;
+  padding: 8px 24px;
+}
+
+.service-benefit + .service-benefit {
+  border-left: 1px solid var(--border-dark);
+}
+
+.service-icon {
+  flex-shrink: 0;
+  font-size: 38px;
+  line-height: 1;
+  color: var(--text-heading);
+}
+
+.service-info {
+  min-width: 0;
+}
+
+.service-info h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-heading);
+}
+
+.service-info p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+@media (max-width: 1024px) {
+  .register-section {
+    padding-inline: 30px;
+  }
+
+  .register-banner {
+    min-height: 700px;
+    padding: 45px 30px;
+  }
+
+  .register-form-container {
+    padding: 45px 30px;
+  }
+
+  .register-title {
+    font-size: 39px;
+  }
+
+  .banner-title {
+    font-size: clamp(40px, 4.5vw, 55px);
+  }
+
+  .banner-intro {
+    margin-bottom: 34px;
+  }
+
+  .banner-benefits {
+    gap: 19px;
+  }
+
+  .benefit-item {
+    gap: 13px;
+  }
+
+  .date-select-group {
+    gap: 7px;
+  }
+
+  .date-select {
+    padding-inline: 8px;
+  }
+
+  .gender-options {
+    gap: 16px;
+  }
+
+  /* Service Benefits */
+  .service-benefits {
+    padding: 25px 30px;
+  }
+
+  .service-benefit {
+    gap: 14px;
+    padding: 8px 14px;
+  }
+
+  .service-icon {
+    font-size: 32px;
+  }
+
+  .service-info h3 {
+    font-size: 13px;
+  }
+
+  .service-info p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .register-section {
+    grid-template-columns: 1fr;
+    padding-inline: 15px;
+    margin-block: 20px;
+  }
+
+  .register-banner {
+    display: none;
+  }
+
+  .register-form-container {
+    padding: 0px 0px;
+    max-width: 400px;
+  }
+
+  .register-header {
+    margin-bottom: 25px;
+  }
+
+  .register-title {
+    font-size: 36px;
+  }
+
+  .form-field {
+    min-height: 40px;
+  }
+
+  .form-input {
+    height: 40px;
+  }
+
+  .date-select {
+    height: 42px;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+
+  .register-submit-btn {
+    min-height: 42px;
+  }
+
+  .social-login-btn {
+    min-height: 42px;
+  }
+
+  /* Service Benefits */
+  .service-benefits {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .register-section {
+    padding-inline: 14px;
+  }
+
+  .register-banner {
+    min-height: 420px;
+    padding: 30px 20px;
+  }
+
+  .banner-eyebrow {
+    gap: 9px;
+    font-size: 9px;
+    letter-spacing: 1.8px;
+  }
+
+  .eyebrow-line {
+    width: 28px;
+  }
+
+  .banner-title {
+    margin-bottom: 14px;
+    font-size: 39px;
+    letter-spacing: -0.5px;
+  }
+
+  .banner-description {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .banner-intro {
+    margin-bottom: 25px;
+  }
+
+  .banner-benefits {
+    gap: 15px;
+    padding-top: 19px;
+  }
+
+  .benefit-item {
+    gap: 11px;
+  }
+
+  .benefit-icon {
+    flex-basis: 19px;
+    font-size: 17px;
+  }
+
+  .benefit-text h3 {
+    font-size: 11px;
+  }
+
+  .benefit-text p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .register-form-container {
+    padding: 0px 0;
+  }
+
+  .register-header {
+    margin-bottom: 22px;
+  }
+
+  .register-title {
+    font-size: 36px;
+  }
+
+  .register-subtitle {
+    font-size: 11px;
+  }
+
+  .register-form {
+    gap: 13px;
+  }
+
+  .form-field {
+    min-height: 30px;
+  }
+
+  .form-input {
+    height: 35px;
+    padding-left: 40px;
+    padding-right: 38px;
+    font-size: 11px;
+  }
+
+  .field-icon {
+    left: 13px;
+    font-size: 15px;
+  }
+
+  .password-icon {
+    right: 13px;
+    font-size: 15px;
+  }
+
+  .field-label {
+    margin-bottom: 9px;
+    font-size: 11px;
+  }
+
+  .date-select-group {
+    gap: 6px;
+  }
+
+  .date-select {
+    height: 35px;
+    padding-inline: 6px;
+    font-size: 11px;
+  }
+
+  .gender-options {
+    gap: 13px;
+  }
+
+  .gender-option {
+    gap: 6px;
+    font-size: 11px;
+  }
+
+  .terms-field {
+    gap: 8px;
+  }
+
+  .terms-label {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .register-submit-btn {
+    min-height: 40px;
+    padding: 12px;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+  }
+
+  .social-login-btn {
+    min-height: 40px;
+    gap: 9px;
+    padding: 11px;
+    font-size: 11px;
+  }
+
+  .register-footer {
+    font-size: 10px;
+  }
+}

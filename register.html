@@ -19,6 +19,204 @@
 
     <main class="main">
         <section class="hero"></section>
+        <section class="register-section">
+            <div class="register-banner">
+                <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <div class="banner-intro">
+                        <p class="banner-eyebrow">
+                            WELCOME TO VELÓRA
+                            <span class="eyebrow-line"></span>
+                        </p>
+                        <h1 class="banner-title">
+                            Style, Comfort,<br> Belonging.
+                        </h1>
+
+                        <p class="banner-description">
+                            Be the first to know about new arrivals, special offers and more.
+                        </p>
+                    </div>
+
+                    <div class="banner-benefits">
+                        <div class="benefit-item">
+                            <i class="bi bi-tag benefit-icon"></i>
+                            <div class="benefit-text">
+                                <h3>Exclusive Offers</h3>
+                                <p>Get early access to sales and special discounts.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <i class="bi bi-truck benefit-icon"></i>
+                            <div class="benefit-text">
+                                <h3>Faster Checkout</h3>
+                                <p>Save your details for a smoother shopping experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="benefit-item">
+                            <i class="bi bi-heart benefit-icon"></i>
+                            <div class="benefit-text">
+                                <h3>Personalized Style</h3>
+                                <p>Get tailored recommendations just for you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="register-form-container">
+
+                <header class="register-header">
+                    <h2 class="register-title">Register</h2>
+                    <p class="register-subtitle">
+                        Already have an account?
+                        <a href="login.html" class="signin-link">Sign In</a>
+                    </p>
+                </header>
+
+                <form class="register-form" action="#" method="post">
+                    <div class="form-field">
+                        <i class="bi bi-person field-icon"></i>
+                        <input type="text" name="fullName" class="form-input" placeholder="Full Name *"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <i class="bi bi-envelope field-icon"></i>
+                        <input type="email" name="email" class="form-input" placeholder="Email Address *"
+                            autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <i class="bi bi-lock field-icon"></i>
+                        <input type="password" name="password" class="form-input" placeholder="Password *"
+                            autocomplete="new-password" minlength="8" required>
+                        <i class="bi bi-eye password-icon"></i>
+                    </div>
+
+                    <div class="form-field">
+                        <i class="bi bi-lock field-icon"></i>
+                        <input type="password" name="confirmPassword" class="form-input"
+                            placeholder="Confirm Password *" autocomplete="new-password" minlength="8" required>
+                        <i class="bi bi-eye password-icon"></i>
+                    </div>
+
+                    <fieldset class="optional-field date-field">
+                        <legend class="field-label">
+                            Date of Birth <span>(Optional)</span>
+                        </legend>
+
+                        <div class="date-select-group">
+                            <select name="birthDay" class="date-select" aria-label="Birth day">
+                                <option value="">DD</option>
+                            </select>
+
+                            <select name="birthMonth" class="date-select" aria-label="Birth month">
+                                <option value="">MM</option>
+                            </select>
+
+                            <select name="birthYear" class="date-select" aria-label="Birth year">
+                                <option value="">YYYY</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="optional-field gender-field">
+                        <legend class="field-label">
+                            Gender <span>(Optional)</span>
+                        </legend>
+
+                        <div class="gender-options">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="male">
+                                <span>Male</span>
+                            </label>
+
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="female">
+                                <span>Female</span>
+                            </label>
+
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="other">
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="terms-field">
+                        <input type="checkbox" id="terms" name="terms" class="terms-checkbox" required>
+
+                        <label for="terms" class="terms-label">
+                            I agree to the
+                            <a href="terms.html">Terms &amp; Conditions</a>
+                            and
+                            <a href="privacy.html">Privacy Policy</a>
+                            <span>*</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="register-submit-btn">
+                        CREATE ACCOUNT
+                    </button>
+
+                    <div class="form-divider">
+                        <span class="divider-line"></span>
+                        <p>or</p>
+                        <span class="divider-line"></span>
+                    </div>
+
+                    <button type="button" class="social-login-btn google-login-btn">
+                        <i class="bi bi-google google-icon"></i>
+                        <span>Continue with Google</span>
+                    </button>
+
+                    <button type="button" class="social-login-btn apple-login-btn">
+                        <i class="bi bi-apple apple-icon"></i>
+                        <span>Continue with Apple</span>
+                    </button>
+
+                    <p class="register-footer">
+                        Already have an account?
+                        <a href="login.html" class="signin-link">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <section class="service-benefits">
+            <div class="service-benefit">
+                <i class="bi bi-truck service-icon"></i>
+                <div class="service-info">
+                    <h3>Free Shipping</h3>
+                    <p>On orders over $50</p>
+                </div>
+            </div>
+
+            <div class="service-benefit">
+                <i class="bi bi-shield-check service-icon"></i>
+                <div class="service-info">
+                    <h3>Secure Payment</h3>
+                    <p>100% protected</p>
+                </div>
+            </div>
+
+            <div class="service-benefit">
+                <i class="bi bi-arrow-counterclockwise service-icon"></i>
+                <div class="service-info">
+                    <h3>Easy Returns</h3>
+                    <p>Within 30 days</p>
+                </div>
+            </div>
+
+            <div class="service-benefit">
+                <i class="bi bi-headset service-icon"></i>
+                <div class="service-info">
+                    <h3>Customer Support</h3>
+                    <p>We're here to help</p>
+                </div>
+            </div>
+        </section>
+        <section class="empty-space"></section>
     </main>
 
     <footer id="footer"></footer>

@@ -15,8 +15,7 @@
   --text-white: #ffffff;
   --text-muted: #77736d;
   --text-nav: #333333;
-
-  /* Border colors */
+  --text-gray: #ffffffc2;
   --border-color: #e5e1da;
   --border-dark: #202020;
 
@@ -96,6 +95,11 @@ i {
     no-repeat;
 }
 
+/* section empty-space */
+.empty-space {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   /* hero section  */
   .hero {
@@ -131,6 +135,12 @@ i {
   /* hero section  */
   .hero {
     height: 180px;
+  }
+
+  /* section empty-space */
+  .empty-space {
+    display: block;
+    padding-bottom: 60px;
   }
 }
 
