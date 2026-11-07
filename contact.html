@@ -4,21 +4,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icon/favicon.svg">
     <title>Contact Us | VÉLORA</title>
-    <link rel="stylesheet" href="./css/globals.css">
-    <link rel="stylesheet" href="./css/layout/header.css">
-    <link rel="stylesheet" href="./css/layout/hero-section.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/layout/footer.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/layout/header.css" />
+    <link rel="stylesheet" href="./css/layout/hero-section.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/layout/footer.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 
 <body>
     <header id="header"></header>
 
-    <main class="main">
+    <main>
         <section class="hero"></section>
+
+        <section class="contact-content">
+            <div class="contact-information">
+                <span class="section-label">Contact Information</span>
+                <h2>Let’s Talk</h2>
+                <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>
+                        Our Location<small>123 Fashion Street, Gulberg III,<br />Lahore, Pakistan</small>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <p>
+                        Email Us<small>support@velora.com<br />sales@velora.com</small>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <p>
+                        Call Us<small>+92 300 1234567<br />Mon – Sat, 10:00 AM – 7:00 PM</small>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <i class="bi bi-clock"></i>
+                    <p>
+                        Business Hours<small>Mon – Sat: 10:00 AM – 7:00 PM<br />Sunday: Closed</small>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <span class="section-label">Send us a message</span>
+                <h2>We’re Here to Help</h2>
+                <p class="form-intro">
+                    Fill out the form below and we’ll get back to you as soon as
+                    possible.
+                </p>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Full Name *" required />
+                    <input type="email" name="email" placeholder="Email Address *" required />
+                    <select name="subject" required>
+                        <option value="" selected disabled>Subject *</option>
+                        <option>Order enquiry</option>
+                        <option>Returns &amp; exchanges</option>
+                        <option>Product question</option>
+                        <option>Other</option>
+                    </select>
+                    <textarea name="message" placeholder="Your Message *" required></textarea>
+                    <button type="submit">Send Message</button>
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe title="Map showing Vélora in Gulberg III, Lahore"
+                    src="https://maps.google.com/maps?q=Gulberg%20III%2C%20Lahore%2C%20Pakistan&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="contact-benefits">
+            <div>
+                <i class="bi bi-truck"></i>
+                <p>Free Shipping<small>On orders over $50</small></p>
+            </div>
+            <div>
+                <i class="bi bi-shield-check"></i>
+                <p>Secure Payment<small>100% protected</small></p>
+            </div>
+            <div>
+                <i class="bi bi-arrow-counterclockwise"></i>
+                <p>Easy Returns<small>Within 30 days</small></p>
+            </div>
+            <div>
+                <i class="bi bi-headset"></i>
+                <p>Customer Support<small>We're here to help</small></p>
+            </div>
+        </section>
+        <section class="empty-space"></section>
     </main>
 
     <footer id="footer"></footer>
