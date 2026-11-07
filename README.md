@@ -1,46 +1,47 @@
-# VÉLORA — Unisex Fashion Store
+# VÉLORA — Fashion Storefront
 
-VÉLORA is a modern, responsive storefront for a unisex fashion brand. The site is built as a static front-end e-commerce experience using HTML, CSS, JavaScript, and local JSON data files.
-
-## Overview
-
-This project presents a complete online shopping experience with a landing page, products, collections, contact form, and registration flow. The design focuses on a clean luxury aesthetic and mobile-friendly browsing.
-
-## Features
-
-- Responsive storefront layout for desktop and mobile devices
-- Reusable header, footer, and navigation components
-- Mobile-friendly bottom navigation menu
-- Multiple storefront pages for browsing and shopping
-- Product and collection sections powered by JSON data
-- Clean fashion-brand styling with modern typography and icons
-- Static front-end implementation with no backend dependency
+VÉLORA is a responsive storefront concept for a modern unisex fashion brand. It is built with static HTML pages, CSS, vanilla JavaScript ES modules, and local JSON data. There is no server-side commerce or account system.
 
 ## Pages
 
-- Home: `index.html`
-- Shop: `shop.html`
-- Collections: `collections.html`
-- Product Detail: `product.html`
-- Contact: `contact.html`
-- Register: `register.html`
+| Page            | File               | What it includes                                          |
+| --------------- | ------------------ | --------------------------------------------------------- |
+| Home            | `index.html`       | Brand landing page and featured products                  |
+| Shop            | `shop.html`        | Product listing, filters, and sorting UI                  |
+| Collections     | `collections.html` | Collection cards rendered from JSON with category filters |
+| Product details | `product.html`     | Product gallery, options, details, and service benefits   |
+| Contact         | `contact.html`     | Contact information, message form, and Google Maps embed  |
+| Register        | `register.html`    | Account registration form UI                              |
 
-## Tech Stack
+## Features
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- ES Modules
-- Bootstrap Icons
-- Font Awesome
-- JSON data files for product content
+- Responsive desktop and mobile layouts
+- Shared header, footer, and mobile navigation injected from `components/`
+- Product and collection content stored in `Json/`
+- Interactive product gallery and product option selectors
+- Contact form front-end confirmation (it does not send messages to a server)
+- SVG favicon at `assets/icon/favicon.svg`
 
-## Project Structure
+## Built with
+
+- HTML5 and CSS3
+- Vanilla JavaScript with ES modules
+- JSON data files
+- Bootstrap Icons and Font Awesome
+- Google Fonts
+- Google Maps iframe embed on the contact page
+
+## Run locally
+
+The pages use JavaScript modules and JSON imports, so run a local web server instead of opening the HTML files directly.
+You can also open the project in VS Code and use the Live Server extension on `index.html`.
+
+## Project structure
 
 ```text
-Web Project/
+Velora/
 ├── assets/
-│   ├── icon/
+│   ├── icon/favicon.svg
 │   └── images/
 │       ├── arrival-product/
 │       ├── collections/
@@ -54,76 +55,29 @@ Web Project/
 │   ├── navigation-menu.js
 │   └── product-cart.js
 ├── css/
-│   ├── collections.css
-│   ├── contact.css
-│   ├── globals.css
-│   ├── home.css
-│   ├── product.css
-│   ├── register.css
-│   ├── shop.css
-│   └── layout/
-│       ├── footer.css
-│       └── header.css
+│   ├── layout/
+│   └── page stylesheets
 ├── js/
-│   ├── collections.js
-│   ├── contact.js
-│   ├── home.js
-│   ├── main.js
-│   ├── register.js
-│   └── shop.js
+│   └── page scripts and shared main.js
 ├── Json/
 │   ├── arrival-products.json
+│   ├── collections-data.json
 │   ├── collections.json
 │   └── products.json
 ├── collections.html
 ├── contact.html
 ├── index.html
 ├── product.html
-├── README.md
 ├── register.html
-├── shop.html
-└── .git/
+└── shop.html
 ```
 
-## Getting Started
+## Updating content
 
-### Option 1: Open directly in the browser
+- Edit product and collection data in the relevant files under `Json/`.
+- Replace images in `assets/images/` and update the paths used by the page scripts or markup.
+- Shared page sections are in `components/`; page behavior is in `js/`; styles are in `css/`.
 
-Open `index.html` in a browser.
+## Limitations
 
-### Option 2: Run a local web server
-
-From the project folder, run:
-
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-### Option 3: Use VS Code Live Server
-
-- Open the project in VS Code
-- Right-click `index.html`
-- Choose "Open with Live Server"
-
-## Customization
-
-- Update product and collection content in the `Json/` folder
-- Replace visual assets in `assets/images/`
-- Adjust page styling in the CSS files under `css/`
-- Modify reusable sections in the JavaScript files inside `components/`
-
-## Notes
-
-- This is a front-end storefront demo and does not include a backend, database, or authentication system.
-- The layout is designed for a fashion brand showcase and can be expanded into a full e-commerce app later.
-- Shared site sections such as the header and footer are injected dynamically from the `components/` folder.
-
-## License
-
-This project is intended for educational, portfolio, and demo use.
+This is a front-end demo. Cart, checkout, registration, and contact submissions are not connected to a backend. The embedded Google Map requires internet access to load.
