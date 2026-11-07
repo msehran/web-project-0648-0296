@@ -17,9 +17,95 @@
     <header id="header"></header>
 
     <main class="main">
-        <section class="hero">
-
+        <section class="product-page">
+            <div class="product-gallery">
+                <div class="product-thumbnails">
+                    <button class="thumb active"><img src="./assets/images/products/image1.png"
+                            alt="Front view"></button>
+                    <button class="thumb"><img src="./assets/images/products/image2.png" alt="Alternate view"></button>
+                    <button class="thumb"><img src="./assets/images/products/image3.png" alt="Styled look"></button>
+                    <button class="thumb"><img src="./assets/images/products/image4.png" alt="Fabric detail"></button>
+                </div>
+                <div class="product-visual">
+                    <img class="main-product-image" src="./assets/images/products/image1.png"
+                        alt="Linen Blend Overshirt">
+                    <button class="gallery-heart"><i class="bi bi-heart"></i></button>
+                    <button class="gallery-arrow prev"><i class="bi bi-arrow-left"></i></button>
+                    <button class="gallery-arrow next"><i class="bi bi-arrow-right"></i></button>
+                    <span class="image-count">1 / 4</span>
+                </div>
+            </div>
+            <div class="product-details">
+                <span class="eyebrow">New arrivals</span>
+                <h2>Linen Blend Overshirt</h2>
+                <p class="product-price">$89.00</p>
+                <div class="product-rating"><span>★★★★★</span><small>4.8 (124 reviews)</small></div>
+                <p class="product-description">A modern essential for effortless style. This linen blend overshirt
+                    brings together comfort, breathability, and a clean, minimal look — perfect for layering or wearing
+                    on its own.</p>
+                <div class="option-block color-block">
+                    <p>Color: <span id="selected-color">Sand</span></p>
+                    <div class="swatches">
+                        <button class="swatch selected" style="--swatch:#d6c7b2" data-color="Sand"></button>
+                        <button class="swatch" style="--swatch:#202a38" data-color="Navy"></button>
+                        <button class="swatch" style="--swatch:#62634b" data-color="Olive"></button>
+                        <button class="swatch" style="--swatch:#171717" data-color="Black"></button>
+                    </div>
+                </div>
+                <div class="size-heading"><span>Size:</span><button class="size-guide"><i
+                            class="bi bi-person-standing"></i> Size Guide</button></div>
+                <div class="sizes"><button
+                        class="selected">XS</button><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                </div>
+                <div class="purchase-actions"><button class="add-cart"><i class="bi bi-bag"></i> Add to
+                        Cart</button><button class="detail-heart"><i class="bi bi-heart"></i></button></div>
+                <button class="buy-now">Buy Now</button>
+                <div class="service-notes">
+                    <div><i class="bi bi-truck"></i>
+                        <p>Free Shipping<small>On orders over $100</small></p>
+                    </div>
+                    <div><i class="bi bi-arrow-repeat"></i>
+                        <p>Easy Returns<small>Within 30 days</small></p>
+                    </div>
+                </div>
+                <div class="accordions">
+                    <details>
+                        <summary>Details</summary>
+                        <p>A relaxed-fit linen blend overshirt with a classic collar, button front, and chest pocket.
+                            Made for easy layering through every season.</p>
+                    </details>
+                    <details>
+                        <summary>Care Instructions</summary>
+                        <p>Machine wash cold with like colors. Do not bleach. Tumble dry low or hang to dry. Warm iron
+                            when needed.</p>
+                    </details>
+                    <details>
+                        <summary>Shipping &amp; Returns</summary>
+                        <p>Complimentary shipping on orders over $100. Returns are accepted within 30 days of delivery.
+                        </p>
+                    </details>
+                </div>
+            </div>
         </section>
+        <section class="benefits">
+            <div>
+                <i class="fa-solid fa-leaf"></i>
+                <p>Premium Quality<small>Made to last</small></p>
+            </div>
+            <div>
+                <i class="bi bi-truck"></i>
+                <p>Worldwide Shipping<small>Fast &amp; reliable</small></p>
+            </div>
+            <div>
+                <i class="bi bi-shield-check"></i>
+                <p>Secure Payments<small>100% safe</small></p>
+            </div>
+            <div>
+                <i class="bi bi-headset"></i>
+                <p>24/7 Support<small>We're here to help</small></p>
+            </div>
+        </section>
+        <section class="empty-space"></section>
     </main>
 
     <footer id="footer"></footer>
@@ -28,7 +114,8 @@
     <nav id="bottom-navigation-bar"></nav>
 
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/product.js" type="module"></script>
 
 </body>
 
-</html
+</html>

@@ -464,7 +464,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   width: 100%;
-  padding: 24px 6%;
+  padding: 24px 50px;
   background: var(--bg-header);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -558,26 +558,8 @@ img {
     gap: 16px;
   }
 
-  /* Service Benefits */
   .service-benefits {
-    padding: 25px 30px;
-  }
-
-  .service-benefit {
-    gap: 14px;
-    padding: 8px 14px;
-  }
-
-  .service-icon {
-    font-size: 32px;
-  }
-
-  .service-info h3 {
-    font-size: 13px;
-  }
-
-  .service-info p {
-    font-size: 11px;
+    padding: 24px 30px;
   }
 }
 
